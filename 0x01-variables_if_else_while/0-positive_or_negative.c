@@ -1,13 +1,11 @@
 #include<stdlib.h>
 #include<time.h>
 #include<stdio.h>
-/*
- *A program that checks if a number is
- *negative or positive
- *
- *main - program entry point
- *function to check if a number os negative or positive
- *Return: Always 0 (success)
+/**
+*main - entry point to a program that checks if
+*a number is negative or positive
+*
+*Return: Always 0 (Success)
 */
 int main(void)
 {
