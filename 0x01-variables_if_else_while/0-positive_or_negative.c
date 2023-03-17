@@ -7,6 +7,7 @@
  *
  *main - program entry point
  *function to check if a number os negative or positive
+ *Return: Always 0 (success)
 */
 int main(void)
 {
