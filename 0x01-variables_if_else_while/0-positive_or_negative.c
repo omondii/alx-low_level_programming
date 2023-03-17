@@ -1,10 +1,12 @@
 #include<stdlib.h>
 #include<time.h>
 #include<stdio.h>
-/* A program that checks if a number is
+/*
+ *A program that checks if a number is
  *negative or positive
  *
- *main - Entry point
+ *main - program entry point
+ *function to check if a number os negative or positive
 */
 int main(void)
 {
@@ -18,9 +20,13 @@ int main(void)
 		printf("%d is positive\n", n);
 
 	}
+	else if (n < 0)
+	{
+		printf("%d is negative\n", n);
+	}
 	else
 	{
-		printf("%d  is negative\n", n);
+		printf("%d is zero\n");
 	}
 	return (0);
 }
