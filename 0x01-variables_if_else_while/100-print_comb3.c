@@ -7,6 +7,7 @@
  *01 and 10 are considered the same combination of the two digits 0 and 1
  *Print only the smallest combination of two digits
  *Numbers should be printed in ascending order, with two digits
+ *Return: Always 0 (success)
  */
 int main(void)
 {
@@ -14,13 +15,14 @@ int main(void)
 
 	for (digit1 = 0; digit1 < 10; digit1++)
 	{
-		for (digit2 = 0; digit2 < 10; digit2++)
+		for (digit2 = 1; digit2 < 10; digit2++)
 		{
 			putchar((digit1 % 10) + '0');
 			putchar((digit2 % 10) + '0');
 
 			if (digit1 == 9 && digit2 == 9)
 				continue;
+
 
 			putchar(',');
 			putchar(' ');
