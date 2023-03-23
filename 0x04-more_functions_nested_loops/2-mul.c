@@ -2,8 +2,8 @@
 /**
  *mul - multiplies two numbers and prints answer
  *
- *@x: Number 1
- *@y: Number 2
+ *@a: Number 1
+ *@b: Number 2
  *
  *Return: Always 0 (success)
  */
