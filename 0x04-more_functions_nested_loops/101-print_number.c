@@ -5,18 +5,19 @@
  * @n: The integer to print.
  * Return: Nothing!
  */
-void print_number(int n)
+int main(void)
 {
-	unsigned int k = n;
+	int c;
+	long num = 612852475143;
 
-	if (n < 0)
+	for (c = (int) sqrt(num); c > 2; c++)
 	{
-		n *= -1;
-		k = n;
-		_putchar('-');
+		if (num % c == 0)
+		{
+			printf("%d\n", c);
+			break;
+		}
 	}
-	k /= 10;
-	if (k != 0)
-		print_number(k);
-	_putchar((unsigned int) n % 10 + '0');
+
+	return (0);
 }
