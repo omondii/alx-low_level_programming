@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *leet - encodes  a string
- *@s: string
+ *@n: string
  *Return: Always 0
  */
 char *leet(char *n)
