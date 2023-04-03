@@ -1,11 +1,9 @@
 #include "main.h"
-#include <stdlib.h>
-#include <string.h>
 /**
  *_strspn - gets the length of a prefix substring
  *@s: main string
  *@accept: substring
- *return: x
+ *Return: n
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -18,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 		while (*p2 && *p2 != *p)
 			++p2;
 		if (*p2 == '\0')
-			return n;
+			return (n);
 		++n;
 		++p;
 	}
