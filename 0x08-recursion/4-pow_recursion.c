@@ -1,6 +1,8 @@
 #include"main.h"
 /**
  *_pow_recursion - returns the value of x raised to power y
+ *@x: base number
+ *@y: eponential value
  *Return: always 0
  */
 int _pow_recursion(int x, int y)
@@ -15,6 +17,6 @@ int _pow_recursion(int x, int y)
 	}
 	else
 	{
-		return (x * _pow_recursion(x, y-1));
+		return (x * _pow_recursion(x, y - 1));
 	}
 }
