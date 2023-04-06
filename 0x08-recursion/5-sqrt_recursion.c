@@ -4,17 +4,21 @@
  *@n: number
  *Return: Always 0
  */
-int _sqrt_recursion(int n, int f)
+int check_recursion(int n, int i)
 {
-	if (f * f <= n)
-	{
-		if (f * f == n)
-		{
-			_putchar(f);
-		}
-		else
-		{
-			return (_sqrt_recursion(n, f + 1));
-		}
-	}
+	if (i * i > n)
+		return (-1);
+
+	if (i * i == n)
+		return (i);
+
+	return check_recursion(n, i + 1);
+}
+
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+
+	return check_recursion(n, 0);
 }
