@@ -11,12 +11,19 @@ int main(int argc, char *argv[])
 	int result = 1;
 	int i;
 
-	for (i = 1; i < argc; i++)
+	if (argc < 2)
 	{
-		int x = strtol(argv[i], NULL, 10);
-
-		result = result * x;
+		printf("Error\n");
 	}
-	printf("%d\n", result);
-	return (0);
+	else
+	{
+		for (i = 1; i < argc; i++)
+		{
+			int x = strtol(argv[i], NULL, 10);
+
+			result = result * x;
+		}
+		printf("%d\n", result);
+	}
+		return (0);
 }
