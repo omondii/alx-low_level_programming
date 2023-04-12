@@ -5,7 +5,7 @@
 /**
  *create_array - creates an array and initializes it with a specific char
  *@size: of memory to be allocated
- *@char: value to iniatialize array with
+ *@c: value to iniatialize array with
  *Return: Nothing
  */
 char *create_array(unsigned int size, char c)
@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 
 	if (s == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 
 	for (i = 0; i < size; i++)

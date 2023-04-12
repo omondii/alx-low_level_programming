@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  *_strdup - returns a pointer to a newly created location
  *@str: string
@@ -7,19 +8,18 @@
  */
 char *_strdup(char *str)
 {
-	char *new = malloc(char)*(len + 1);
-	int len = _strlen(str);
+	int i;
+	int len = strlen(str) + 1;
+	char *new = malloc(sizeof(char) * len);
 
-	if (str == NULL)
+	if (str == NULL || new == NULL)
 	{
 		return (NULL);
 	}
 
-
-	if (new == NULL)
+	for (i = 0; i < len; i++)
 	{
-		return (NULL);
+		new[i] = str[i];
 	}
-	_strcpy(new, str);
 	return (new);
 }
