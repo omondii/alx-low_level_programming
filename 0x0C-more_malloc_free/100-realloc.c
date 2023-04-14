@@ -1,4 +1,5 @@
 #include "main.h"
+#include<string.h>
 #include<stdlib.h>
 #include<stdio.h>
 /**
@@ -21,7 +22,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		free(ptr);
 		return (NULL);
 	}
-	if (new_size == old_size);
+	if (new_size == old_size)
 	{
 		return (ptr);
 	}
@@ -32,9 +33,9 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (NULL);
 	}
 
-	memcpy(new, ptr, (old_size < new_size) ? old_size : new_size)
+	memcpy(new, ptr, (old_size < new_size) ? old_size : new_size);
 
-		free(pts);
+		free(ptr);
 
-	return (new_ptr);
+	return (new);
 }
