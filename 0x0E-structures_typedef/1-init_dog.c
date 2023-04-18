@@ -2,6 +2,9 @@
 #include "dog.h"
 /**
  * struct dog - initializes a varible of type struct dog
+ *@name: name of the dog
+ *@age: dog's age
+ *@owner: dog owner
  *@d: pointer to struct dog
  *Return: Nothing
  */
