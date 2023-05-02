@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- *find_listint_loop - finds a loop in alinked list
+ *find_listint_loop1 - finds a loop in alinked list
  *@head: start of linked list to search
  *Return: address of node where loop starts
  */
@@ -21,13 +21,13 @@ listint_t *find_listint_loop1(listint_t *head)
 				ptr = ptr->next;
 				ptr2 = ptr2->next;
 			}
-			return ptr;
+			return (ptr);
 		}
 	}
-	return NULL;
+	return (NULL);
 }
 /**
- *free_listint_free - frees listint_t
+ *free_listint_safe - frees listint_t even with loops
  *@h: head of list to print
  *Return: Number of freed nodes
  */
