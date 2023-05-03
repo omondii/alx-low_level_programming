@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *find_listint_safe - prints the contents of a linked list
+ *find_listint_loop_pl - prints the contents of a linked list
  *@head: start of a linked list
  *Return: nmber of nodes in the list
  */
@@ -22,14 +22,14 @@ listint_t *find_listint_loop_pl(listint_t *head)
 				ptr = ptr->next;
 				ptr2 = ptr2->next;
 			}
-			return ptr;
+			return (ptr);
 		}
 	}
-	return NULL;
+	return (NULL);
 }
 /**
  *print_listint_safe - frees alists
- *@h: head of a list
+ *@head: head of a list
  *Return: number of freed nodes
  */
 
