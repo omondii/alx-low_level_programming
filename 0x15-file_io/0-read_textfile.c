@@ -2,9 +2,9 @@
 #include <stdio.h>
 /**
  *read_textfile - reads textfiles and prints it to the posix std output
- *filename: name of the file to print
- *letters: number of letters it should read and print
- *Returns: count
+ *@filename: name of the file to print
+ *@letters: number of letters it should read and print
+ *Return: Number of letters read an printed
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
