@@ -3,4 +3,4 @@ Thsi focuses on fie hanfling operations in c. These operations include:
 create files using creat()
 opening files using the fopen() function
 Reading and writing data into files
-opened files must be closed
+opened files must be close
