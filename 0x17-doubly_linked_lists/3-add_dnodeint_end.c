@@ -3,7 +3,7 @@
  *add_dnodeint_end - adds a new node at the end of a linked list
  *@head: the head of the linked list
  *@n: data to be added to the list
- *Returns: Null if failed, New node if successfull
+ *Return: Null if failed, New node if successfull
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
@@ -26,7 +26,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 
 	current = *head;
-	while (current->next !=NULL)
+	while (current->next != NULL)
 	{
 		current = current->next;
 	}
