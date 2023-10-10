@@ -1,8 +1,8 @@
-#include <stddef.h>
-#include <stdio.h>
+#include "search_algos.h"
+
 /**
  *linear_search - Search for a value in an array using linear search
- *@array: pointer to the first element of the array to search in
+ *@array: emacs pointer to the first element of the array to search in
  *@size: number of elements in array
  *@value: value to search for
  *Return: First occurence of value
