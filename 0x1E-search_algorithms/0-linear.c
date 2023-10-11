@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- *linear_search - Search for a value in an array using linear search
+ *linear_search -  for a value in an array using linear search
  *@array: emacs pointer to the first element of the array to search in
  *@size: number of elements in array
  *@value: value to search for
@@ -9,16 +9,15 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-	size_t i;
 
 	if (size == 0)
 		return (-1);
-
-	for (i = 0; i < size; i++)
+	// check of the current value of array, if it equals value. return it
+	if (array[size - 1] == value)
 	{
-		printf("Value Checked array[%ld] to [%d]\n", i, array[i]);
-		if (array[i] == value)
-			return (i);
+		return (size - 1);
 	}
-	return (-1);
+	// Recursively iterate over the array
+	printf("Value checked array[%lu] = [%d]\n", size - 1, array[size - 1]);
+	return linear_search(array, size - 1, value);
 }
