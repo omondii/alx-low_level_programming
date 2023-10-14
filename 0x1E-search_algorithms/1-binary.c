@@ -16,10 +16,12 @@ int binary_search_recursive(int *array, int left, int right, int value)
 	if (left > right)
 		return (-1);
 
-	printf("Searching in subarray: ");
+	printf("Searching in array: ");
 	for (i = left; i <= right; i++)
 	{
-		printf("%d ", array[i]);
+		printf("%d", array[i]);
+		if (i < right)
+			printf(", ");
 	}
 	printf("\n");
 
